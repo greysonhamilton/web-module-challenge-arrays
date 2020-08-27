@@ -147,7 +147,7 @@ let modifiedFlavors = [];
 
 function copy(arrOld, arrNew)
 {
-    arrNew = arrOld.slice(0);
+    arrNew.push(...arrOld);
 }  
 
     copy(originalFlavors, modifiedFlavors);
