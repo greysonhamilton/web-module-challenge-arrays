@@ -144,12 +144,14 @@ Your function should accept:
 
 and should return a new array that is identical to the old array. You can name the new array however you'd like. */
 
-function copy(/*code here*/){
+function copy(arrold, arrnew)
+{
+    arrnew = arr.slice();
+}  
 
-    /*code here*/
+    copy(originalFlavors, modifiedFlavors);
 
-}
-let oldFlavors = [...originalFlavors];
+    console.log(modifiedFlavors);
 
 /* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. Write a function that checks every item in the array for a given string and returns a new array called filteredArray with just these values. Rather than hardcoding "chocolate" into your function, pass a string as a parameter, and invoke with the argument "chocolate". This way you could also filter for "Vanilla", "Sherbert", etc. when those holidays roll around.
 
@@ -165,15 +167,22 @@ For example, filterByWord(originalFlavors, "Chocolate") should return ["Chocolat
 DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 
 hint - you can use the .includes method to help you solve this */
-let filteredArray = 0;
+function filterByWord(arr,flavor)
+{
+    const filteredArray = new array();
 
-function filterByWord(arr, flavor){
-    for (let i = 0; i < arr.length; i++){
-        if(originalFlavors.includes(Chocolate,i)){
-            filteredArray++;
+    for(let i = 0; i < arr.length; i++)
+
+    {        
+           if (arr[i] == flavor) 
+        {
+        
+            filteredArray=arr.slice(i,i);
         }
-    }
-} originalFlavors.splice(i,1);
+
+    }   console.log(filteredArray);
+
+} filterByWord(originalFlavors,'Chocolate');
 
 
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/ 
